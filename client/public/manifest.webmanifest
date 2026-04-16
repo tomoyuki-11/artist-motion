@@ -1,0 +1,23 @@
+{
+  "name": "ARTIST MOTION - アーティストモーション",
+  "short_name": "ARTIST MOTION",
+  "description": "風舞流曲技太鼓・体操・フィットネスなど、心を豊かにする身体活動",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/images/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

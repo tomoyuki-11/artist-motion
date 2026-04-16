@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <!-- www → 非www に統一（SEO・重複コンテンツ防止）。本番ではホスティング側で301リダイレクトを推奨 -->
+  <script>
+    (function () {
+      var h = window.location.hostname;
+      if (h === 'www.artist-motion.com') {
+        window.location.replace('https://artist-motion.com' + window.location.pathname + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+  <title>ARTIST MOTION~アーティストモーション~ 風舞流曲技太鼓・ベースボール・器械体操・フィットネス</title>
+  <meta name="description"
+    content="丹波市・三田市・神戸市北区を中心に活動するARTIST MOTION~アーティストモーション~は、風舞流曲技太鼓・ベースボール・器械体操・フィットネスなど、心を豊かにする身体活動を提供しています。お気軽にお問い合わせください。" />
+  <meta name="keywords"
+    content="アーティストモーション,ARTIST MOTION,風舞流曲技太鼓,太鼓,和太鼓,太鼓 教室,曲技太鼓,野球,野球クラブ,野球 教室,ベースボール,ベースボールクラブ,器械体操,体操教室,フィットネス,フィットネスクラス,丹波市,丹波,三田市,三田,筋トレ,ダイエット" />
+  <link rel="canonical" href="https://artist-motion.com/" />
+
+  <!-- Google Search Console（所有権確認） -->
+  <meta name="google-site-verification" content="mLepU07anh0inA8ExkB5u-RczWddcGSAg0vZIszVJsE" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://artist-motion.com/" />
+  <meta property="og:title" content="ARTIST MOTION - アーティストモーション" />
+  <meta property="og:description" content="アーティストモーションは、風舞流曲技太鼓・体操・フィットネスなど、心を豊かにする身体活動。多様なプログラムで個人の可能性を引き出します。" />
+  <meta property="og:image" content="https://artist-motion.com/images/logo.jpeg" />
+  <meta property="og:image:alt" content="ARTIST MOTION（アーティストモーション）ロゴ" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:site_name" content="アーティストモーション" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ARTIST MOTION - アーティストモーション" />
+  <meta name="twitter:description" content="アーティストモーションは、風舞流曲技太鼓・体操・フィットネスなど、心を豊かにする身体活動。" />
+  <meta name="twitter:image" content="https://artist-motion.com/images/logo.jpeg" />
+
+  <link rel="icon" href="/images/logo.jpeg" type="image/jpeg" />
+  <!-- 検索結果・ブラウザタブ用アイコン（絶対URLでクローラーが取得しやすくする） -->
+  <link rel="icon" href="https://artist-motion.com/images/logo.jpeg" type="image/jpeg" sizes="any" />
+
+  <!-- ホーム画面に追加したときのアイコン（iPhone / iPad） -->
+  <link rel="apple-touch-icon" href="/images/logo.jpeg" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="ARTIST MOTION" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <!-- ホーム画面に追加したときのアイコン（Android） -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- 米国リージョンなど遠方オリジンでも表示を速くする: API・画像の先行接続・先読み -->
+  <link rel="preconnect" href="https://api.artist-motion.com" crossorigin />
+  <link rel="preload" as="image" href="/images/IMG_6577.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <!-- Umami 利用時は .env に VITE_ANALYTICS_ENDPOINT と VITE_ANALYTICS_WEBSITE_ID を設定し、ここに script タグを追加 -->
+</body>
+
+</html>

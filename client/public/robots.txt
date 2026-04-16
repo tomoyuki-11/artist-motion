@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# 管理画面は検索対象にしない
+Disallow: /admin
+
+Sitemap: https://artistmotion.jp/sitemap.xml
