@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -241,29 +242,7 @@ html {
     }
   }
 
-  /* 斜めストリップ: サービスセクションと同じ白で境目をなくす */
-  .diagonal-strip {
-    position: sticky;
-    bottom: 0;
-    z-index: 5;
-    height: 12rem;
-    background: #ffffff;
-    clip-path: polygon(0 100%, 0 6%, 100% 0, 100% 100%);
-    pointer-events: none;
-  }
 
-  @media (max-width: 768px) {
-    .diagonal-strip {
-      height: 5rem;
-      clip-path: polygon(0 100%, 0 4%, 100% 0, 100% 100%);
-    }
-  }
-
-  @media (max-width: 480px) {
-    .diagonal-strip {
-      display: none;
-    }
-  }
 
   /* Neon accent line（従来） */
   .neon-accent {
@@ -278,6 +257,24 @@ html {
     width: 48px;
     border-radius: 2px;
   }
+
+  /* 和風フォント: 公演タイトル用（明朝体） */
+  .font-koen {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+  }
+
+  /* 公演セクション背景: ::before + position:fixed で iOS Safari でも固定パララックス */
+  .koen-parallax-section::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url(/images/koen_oshirase/背景画像.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
 
   /* Bold button with bounce effect */
   .btn-bold {
